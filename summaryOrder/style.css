@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "Red Hat";
+    src: url(https://fonts.google.com/specimen/Red+Hat+Display);
+}
+
+body {
+    background: repeat-x url("images/pattern-background-desktop.svg");
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    align-items: center;
+    font-family: "Red Hat", sans-serif;
+    font-stretch: expanded;
+}
+
+h1 {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    color: hsl(223, 47%, 23%);
+}
+
+p {
+    font-weight: 700;
+    font-stretch: expanded;
+    color: hsl(224, 23%, 55%);
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+#summary-box {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 450px;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#top-image {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.in {
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+#money-recap {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#money-recap img {
+    margin: 20px;
+}
+
+#plan {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+#plan p {
+    margin: 0;
+}
+
+#change {
+    transition-duration: 0.2s;
+    margin-left: 130px;
+    color: hsl(245, 75%, 52%);
+    font-weight: 800;
+    text-decoration: underline;
+}
+#change:hover {
+    transition-duration: 0.2s;
+    color: hsl(224, 23%, 55%);
+}
+
+#pay-button {
+    transition-duration: 0.2s;
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 10px;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 10px 30px hsla(245, 75%, 52%, 0.384);
+}
+#pay-button:hover {
+    transition-duration: 0.2s;
+    background-color: hsl(224, 23%, 55%);
+}
+
+#cancel {
+    transition-duration: 0.2s;
+    margin-bottom: 30px;
+}
+#cancel:hover {
+    transition-duration: 0.2s;
+    color: hsl(245, 75%, 52%);
+}
