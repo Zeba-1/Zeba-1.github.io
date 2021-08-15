@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Tip Calculator</title>
+        <meta charset="UTF-8" author="Zeba-1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <img src="images/logo.svg" alt="logo SPLITTER" id="logo">
+        <span id="calculator">
+            <span id="info">
+                <p>Bill</p>
+                <span class="typingBox">
+                    <img src="images/icon-dollar.svg" alt="dolar icon">
+                    <input type="text" id="bill" placeholder="0">
+                </span>
+                <p>Select Tip %</p>
+                <span id="tipSelector">
+                    <script>var selectTip = null</script>
+                    <span class="tipBox innactive" id="5" onclick="tipSelector(5)">5%</span>
+                    <span class="tipBox innactive" id="10" onclick="tipSelector(10)">10%</span>
+                    <span class="tipBox innactive" id="15" onclick="tipSelector(15)">15%</span>
+                    <span class="tipBox innactive" id="25" onclick="tipSelector(25)">25%</span>
+                    <span class="tipBox innactive" id="50" onclick="tipSelector(50)">50%</span>
+                    <span class="tipBox"><input type="text" id="customTip" placeholder="Custom"></span>
+                </span>
+                <p>Number of People</p>
+                <span class="typingBox">
+                    <img src="images/icon-person.svg" alt="person icon">
+                    <input type="text" id="nPeople" placeholder="0">
+                </span>
+            </span>
+            <span id="result">
+                <span id="recapBox">
+                    <span class="recap">
+                        <span class="text">
+                            <p>Tip Amount</p>
+                            <p class="person">/ person</p>
+                        </span>
+                        <p class="bigNumber" id="tipAmount">$0.00</p>
+                    </span>
+                    <span class="recap">
+                        <span class="text">
+                            <p>Total</p>
+                            <p class="person">/ person</p>
+                        </span>
+                        <p class="bigNumber" id="total">$0.00</p>
+                    </span>
+                </span>
+                <button id="reset">RESET</button>
+            </span>
+        </span>
+        <script type="text/javascript" src="calculator.js"></script>
+    </body>
+</html>
