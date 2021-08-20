@@ -138,6 +138,14 @@ function printRes() {
     totalOfTip = totalInt * (selectTip/100);
     totalWithBill = totalInt + totalOfTip;
 
-    tipAmount.textContent = "$".concat(totalOfTip / parseInt(nPeople.value));
-    total.textContent = "$".concat(totalWithBill / parseInt(nPeople.value));
+    // calcul des resultats
+    resTip = totalOfTip / parseInt(nPeople.value)
+    resTotal = totalWithBill / parseInt(nPeople.value)
+
+    //arondis des resultats
+    resTip = Math.round(resTip*100)/100
+    resTotal = Math.round(resTotal*100)/100
+
+    tipAmount.textContent = "$".concat(resTip);
+    total.textContent = "$".concat(resTotal);
 }
