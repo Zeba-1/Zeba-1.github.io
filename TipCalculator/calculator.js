@@ -139,8 +139,8 @@ function printRes() {
     totalWithBill = totalInt + totalOfTip;
 
     // calcul des resultats
-    resTip = totalOfTip / parseInt(nPeople.value)
-    resTotal = totalWithBill / parseInt(nPeople.value)
+    let resTip = totalOfTip / parseInt(nPeople.value)
+    let resTotal = totalWithBill / parseInt(nPeople.value)
 
     //arondis des resultats
     resTip = Math.round(resTip*100)/100
